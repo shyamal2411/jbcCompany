@@ -1,0 +1,32 @@
+body
+{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.bg-imageTelecom{
+  background-image: url('./assets/bannermain.jpg');
+    background-size: cover;
+      background-position: top;
+}
+
+
+.bg-imagePower {
+  background-image: url('./assets/banner2.jpg');
+  background-size: cover;
+  background-position: top;
+}
+.bg-imageConstruction {
+  background-image: url('./assets/banner1.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+.img1{
+  background-image: url('./assets/banner2.jpg');
+    background-size: cover;
+      background-position: top;
+}
+
+.shadow-sxl {
+  @apply shadow-xl;
+}
