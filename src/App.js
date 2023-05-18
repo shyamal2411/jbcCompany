@@ -6,8 +6,6 @@ import Team from "./components/Team";
 import Header from "./components/Header";
 import Contact from "./components/Contact";
 import { Footer } from "./components/Footer";
-import Services from "./components/Services";
-import SubServices from "./components/Telecom";
 import Telecom from "./components/Telecom";
 import Construction from "./components/Construction";
 import Power from "./components/Power";
@@ -21,6 +19,7 @@ function App() {
           <Route path="/" element={<Hero />} />
           <Route path="/telecom" element={<Telecom />} />
           <Route path="/construction" element={<Construction />} />
+          <Route path="../#services" element={<Construction />} />
           <Route path="/power" element={<Power />} />
           <Route path="#contact" element={<Contact />} />
         </Routes>

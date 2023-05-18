@@ -123,14 +123,14 @@ function ClientSlider() {
         {clients.map((client, index) => (
           <div
             key={index}
-            className="h-full w-full flex items-center justify-center mx-auto"
+            className="h-full w-full flex items-center mb-10 justify-center mx-auto"
           >
             <img
               src={client.image}
               alt={client.name}
               className="h-40 w-40 object-contain mx-auto"
             />
-            <p className="text-center">{client.name}</p>
+            {/* <p className="text-center">{client.name}</p> */}
           </div>
         ))}
       </Slider>

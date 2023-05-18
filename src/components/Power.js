@@ -1,48 +1,70 @@
 import React from "react";
-import Aboutus from "../assets/aboutus.png";
+import PowerSub from "../assets/PowerSub.png";
+import PowerSub2 from "../assets/PowerSub2.png";
 
 const Power = () => {
   return (
     <>
-      <div>
-        <div id="about" className="bg-white container-fluid text-white py-16">
-          <h1 className="text-center text-4xl font-bold my-4">
-            Services We Offer
+      <div className="container-fluid">
+        <div
+          id="power"
+          className="bg-white container flex flex-col mx-auto text-black py-16"
+        >
+          <h1 className="text-center text-4xl mb-10 font-bold my-4">
+            POWER & ENERGY SECTOR
           </h1>
-          <div className="flex flex-col items-center justify-around md:flex-row">
-            <div className="w-full md:w-2/5">
-              <img src={Aboutus} alt="About Us" className="rounded-2xl" />
+          <div className="flex flex-col container items-center justify-around md:flex-row">
+            <div className="w-full md:w-2/5 flex flex-col items-center mx-20">
+              <img
+                src={PowerSub}
+                alt="About Us"
+                className="rounded-2xl h-[300px] text-center mb-10 w-[85%]"
+              />
+              <img
+                src={PowerSub2}
+                alt="About Us"
+                className="rounded-2xl h-[300px] w-[85%] text-center"
+              />
             </div>
-            <div className="w-full md:w-2/4">
-              <p className="text-justify font-medium my-4 mr-28">
-                J B & Company Established in 2003, J B & Company has emerged as
-                the premiere organization to offer a range of services from
-                Network Planning & Design through Operations, Project
-                management, and Maintenance in the Telecom, Power & Energy
-                sectors. <br />
+            <div className="w-1/2 flex flex-col mr-[2%]">
+              <p className="text-left font-medium my-10 md:mr-16">
+                J B & Company has rich experience in Power & Energy Sector
+                Project execution <br />
+                and Maintenance activity.
+                <br />
                 Today J B & Company has attained a distinctive position in the
-                telecom, Power & Energy space. <br />
                 <br />
-                With perfect focus and strategic fusion of independent Strategic
-                Business Units (SBUS), Cluster assures dependable service
-                bandwidth, adhering to planned timelines and meticulous quality
-                norms, as per international standards. We also have a rich
-                background in providing wired and wireless connectivity
-                solutions to a wide variety of corporate and institutional
-                clients, for the last several years.
+                telecom, Power & Energy space.
                 <br />
-                <br /> J B & Company is a specialist in Civil,
-                Electromechanical, Telecom, Road Projects, Oil & Gas Pipelines,
-                Power Lines (High & Low Voltage), Substation, and Solar Power
-                work with high performance & committed delivery.
-                <br />
-                <br /> We believe this provides a significant opportunity for
-                our Customers & Clients to access an enhanced service portfolio
-                and increased geographic coverage to support the needs of
-                high-quality construction work with new innovative ideas, which
-                is the aim of J B & Company. J B & Company has a Strong Hold on
-                Local Authorities to enable smooth and Speedy work execution in
-                Cities.
+                <div class="md:p-8">
+                  <div class="px-0">
+                    <h2 class="text-2xl font-bold mb-4">
+                      Projects & Maintenance Services:
+                    </h2>
+                    <ul class="list-disc ml-6">
+                      <li class="mb-2">
+                        Gas Pipeline Laying & Maintenance for NLD, LMC & Home
+                        Connectivity
+                      </li>
+                      <li class="mb-2">
+                        Solar Power Project Execution & Maintenance with Panel
+                        Supply
+                      </li>
+                      <li class="mb-2">
+                        HT & LT Power Cable Laying & Termination
+                      </li>
+                      <li class="mb-2">
+                        Substation & Electric Panel Installation
+                      </li>
+                      <li class="mb-2">Switchyard Installation up to 220 KV</li>
+                      <li class="mb-2">Overhead Transmission Line Laying</li>
+                      <li class="mb-2">Transmission Substation Foundation</li>
+                      <li class="mb-2">
+                        External & Internal Electrical Wiring
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </p>
             </div>
           </div>

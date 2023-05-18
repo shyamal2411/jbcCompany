@@ -4,27 +4,30 @@ import Atul from "../assets/atulJasani.jpeg";
 const Team = () => {
   return (
     <>
-      <div id="team" className="flex justify-center items-center mt-7 lg:mt-0">
+      <div
+        id="team"
+        className="flex bg-[#0E303D] justify-center items-center mt-7 lg:mt-0"
+      >
         <section className="pb-10 lg:pt-[50px] lg:pb-2">
           <div className="container mx-50">
             <div className="mx-4 flex flex-wrap">
               {/* <div className="container bg-red-300 px-4"> */}
               <div className="mx-auto mb-[50px] max-w-[510px] text-lg text-center">
-                <h2 className="text-dark text-3xl font-bold sm:text-4xl md:text-[40px]">
-                  Our Awesome Team
+                <h2 className="text-white text-3xl mt-10 font-bold sm:text-4xl md:text-[40px]">
+                  OUR CORE TEAM
                 </h2>
-                {/* <p className="text-body-color text-lg">
-                  There are many variations of passages of Lorem Ipsum available
-                  but the majority have suffered alteration in some form.
-                </p> */}
               </div>
             </div>
             {/* </div> */}
-            <div className="mx-4 flex flex-wrap justify-center">
+            <div className="mx-4 flex flex-wrap justify-around">
               <div className="w-full px-4 md:w-1/2 xl:w-1/2">
                 <div className="mx-auto mb-10 w-full max-w-[370px]">
                   <div className="relative overflow-hidden rounded-lg">
-                    <img src={Darshak} alt="image1" className="w-full" />
+                    <img
+                      src={Darshak}
+                      alt="image1"
+                      className="w-[350px] h-[400px]"
+                    />
                     <div className="absolute bottom-5 left-0 w-full text-center">
                       <div className="relative mx-5 overflow-hidden rounded-lg bg-white py-5 px-3">
                         <h3 className="text-dark text-base font-semibold">
@@ -32,7 +35,7 @@ const Team = () => {
                         </h3>
                         <p className="text-body-color text-sm">Proprietor</p>
                         <div>
-                          <span className="absolute left-0 bottom-0">
+                          {/* <span className="absolute left-0 bottom-0">
                             <svg
                               width="61"
                               height="30"
@@ -198,7 +201,7 @@ const Team = () => {
                                 fill="#3056D3"
                               />
                             </svg>
-                          </span>
+                          </span> */}
                         </div>
                       </div>
                     </div>
@@ -208,7 +211,11 @@ const Team = () => {
               <div className="w-full px-4 md:w-1/2 xl:w-1/2">
                 <div className="mx-auto mb-10 w-full max-w-[370px]">
                   <div className="relative overflow-hidden rounded-lg">
-                    <img src={Atul} alt="image2" className="w-full" />
+                    <img
+                      src={Atul}
+                      alt="image2"
+                      className="w-[350px] h-[400px]"
+                    />
                     <div className="absolute bottom-5 left-0 w-full text-center">
                       <div className="relative mx-5 overflow-hidden rounded-lg bg-white py-5 px-3">
                         <h3 className="text-dark text-base font-semibold">
@@ -218,7 +225,7 @@ const Team = () => {
                           Managing Director
                         </p>
                         <div>
-                          <span className="absolute left-0 bottom-0">
+                          {/* <span className="absolute left-0 bottom-0">
                             <svg
                               width="61"
                               height="30"
@@ -384,7 +391,7 @@ const Team = () => {
                                 fill="#3056D3"
                               />
                             </svg>
-                          </span>
+                          </span> */}
                         </div>
                       </div>
                     </div>

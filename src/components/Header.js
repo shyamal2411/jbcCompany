@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import logo from "../assets/logo.png";
 
 // Base color - WHITE
 // First color - #0E303D
@@ -37,11 +38,7 @@ function Header() {
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="/" className="flex items-center">
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="h-8 mr-3"
-              alt="Flowbite Logo"
-            />
+            <img src={logo} className="h-14 w-14 mr-3" alt="Flowbite Logo" />
             <span
               className={`self-center leading-none text-black text-2xl font-semibold whitespace-nowrap ${
                 scrolled ? "text-white" : "text-white"
@@ -108,7 +105,7 @@ function Header() {
               </li>
               <li>
                 <a
-                  href="#services"
+                  href="../#services"
                   className={`block py-2 pl-3 pr-4 text-black rounded text-xl hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ${
                     scrolled ? "text-white " : "text-white"
                   }`}
