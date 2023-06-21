@@ -36,30 +36,36 @@ const Power = () => {
                 <br />
                 telecom, Power & Energy space.
                 <br />
-                <div class="md:p-8">
-                  <div class="px-0">
-                    <h2 class="text-2xl font-bold mb-4">
+                <div>
+                  <div className="px-0 mt-4">
+                    <h2 className="text-2xl font-bold mb-4">
                       Projects & Maintenance Services:
                     </h2>
-                    <ul class="list-disc ml-6">
-                      <li class="mb-2">
+                    <ul className="list-disc ml-6">
+                      <li className="mb-2">
                         Gas Pipeline Laying & Maintenance for NLD, LMC & Home
                         Connectivity
                       </li>
-                      <li class="mb-2">
+                      <li className="mb-2">
                         Solar Power Project Execution & Maintenance with Panel
                         Supply
                       </li>
-                      <li class="mb-2">
+                      <li className="mb-2">
                         HT & LT Power Cable Laying & Termination
                       </li>
-                      <li class="mb-2">
+                      <li className="mb-2">
                         Substation & Electric Panel Installation
                       </li>
-                      <li class="mb-2">Switchyard Installation up to 220 KV</li>
-                      <li class="mb-2">Overhead Transmission Line Laying</li>
-                      <li class="mb-2">Transmission Substation Foundation</li>
-                      <li class="mb-2">
+                      <li className="mb-2">
+                        Switchyard Installation up to 220 KV
+                      </li>
+                      <li className="mb-2">
+                        Overhead Transmission Line Laying
+                      </li>
+                      <li className="mb-2">
+                        Transmission Substation Foundation
+                      </li>
+                      <li className="mb-2">
                         External & Internal Electrical Wiring
                       </li>
                     </ul>

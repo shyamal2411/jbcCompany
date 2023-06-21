@@ -117,7 +117,7 @@ function ClientSlider() {
   return (
     <>
       <h1 className="text-4xl text-center font-bold text-black mt-16 mb-10">
-        OUT CLIENTS
+        OUR CLIENTS
       </h1>
       <Slider {...settings} ref={sliderRef} className="flex">
         {clients.map((client, index) => (

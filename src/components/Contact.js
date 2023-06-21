@@ -1,6 +1,29 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ij80mus",
+        "template_jg7lq0s",
+        form.current,
+        "Te2UxaDaAdwHwZLBc"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("Message sent!");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div
       id="contact"
@@ -15,25 +38,26 @@ const Contact = () => {
             Got a technical issue? Want to send feedback about a beta feature?
             Need details about our Business plan? Let us know.
           </p>
-          <form action="#" className="space-y-8">
+          <form ref={form} onSubmit={sendEmail} className="space-y-8">
             <div>
               <label
-                for="email"
+                htmlFor="email"
                 className="block mb-2 text-1xl font-medium  text-black"
               >
                 Your email
               </label>
               <input
                 type="email"
+                name="user_email"
                 id="email"
                 className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-                placeholder="name@flowbite.com"
+                placeholder="abc@gmail.com"
                 required
               />
             </div>
             <div>
               <label
-                for="subject"
+                htmlFor="subject"
                 className="block mb-2 text-1xl font-medium text-black"
               >
                 Subject
@@ -41,6 +65,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="subject"
+                name="subject"
                 className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
                 placeholder="Let us know how we can help you"
                 required
@@ -48,7 +73,7 @@ const Contact = () => {
             </div>
             <div className="sm:col-span-2">
               <label
-                for="message"
+                htmlFor="message"
                 className="block mb-2 text-1xl font-medium text-black"
               >
                 Your message
@@ -56,12 +81,14 @@ const Contact = () => {
               <textarea
                 id="message"
                 rows="6"
+                name="message"
                 className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
                 placeholder="Leave a comment..."
               ></textarea>
             </div>
             <button
               type="submit"
+              value="Send"
               className="py-3 px-5 text-sm font-medium text-center text-[#ffab2d] rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-[#0E303D]"
             >
               Send message

@@ -7,31 +7,45 @@ const Construction = () => {
     <>
       <div className="container-fluid">
         <div
-          id="construction"
-          className=" container items-center flex mx-auto flex-col text-black py-16"
+          id="power"
+          className="bg-white container flex flex-col mx-auto text-black py-16"
         >
-          <h1 className="text-center text-4xl font-bold my-4">
+          <h1 className="text-center text-4xl mb-10 font-bold my-4">
             CIVIL INFRA & CONSTRUCTION SECTOR
           </h1>
-          <div className="flex w-full flex-col mx-auto container items-center justify-center md:flex-row px-4">
-            <div className="w-full md:w-[37%] mx-auto">
-              <p className="text-left font-medium my-10 mx-10">
-                Civil engineering is the oldest discipline of engineering. Since
-                the very beginning of human existence. In today's society, there
-                are huge projects meant for civil construction and engineering.{" "}
-                <br />
+          <div className="flex flex-col container items-center justify-around md:flex-row">
+            <div className="w-full md:w-2/5 flex flex-col items-center mx-20">
+              <img
+                src={ConstructionSub}
+                alt="About Us"
+                className="rounded-2xl h-[300px] text-center mb-10 w-[85%]"
+              />
+              <img
+                src={ConstructionSub2}
+                alt="About Us"
+                className="rounded-2xl h-[300px] w-[85%] text-center"
+              />
+            </div>
+            <div className="w-1/2 flex flex-col mr-[2%]">
+              <p className="text-left font-medium my-10 md:mr-16">
+                Civil engineering is the oldest discipline of engineering.
+                <br /> Since the very beginning of human existence.
+                <br /> In today's society, there are huge projects meant for
+                civil construction
                 <br />
                 The infrastructure used in our daily lives all has been created
                 because of civil construction and engineering.
-                <br /> The roads, railways, stadiums, harbors, schools, and
-                other buildings constructed all are a contribution of civil
+                <br />
+                The roads, railways, stadiums, harbors, schools, and other
+                buildings constructed all are a contribution of civil
                 engineering.
-                <div class="p-8">
-                  <div class="px-0">
-                    <h2 class="text-2xl font-bold mb-4">
+                <br />
+                <div>
+                  <div className="px-0 mt-4">
+                    <h2 className="text-2xl font-bold mb-4">
                       Projects & Maintenance Services:
                     </h2>
-                    <ul class="list-disc ml-8">
+                    <ul className="list-disc ml-6">
                       <li class="mb-2">
                         Gas Pipe Line Laying & Maintenance for NLD, LMC & Home
                         Connectivity
@@ -56,18 +70,6 @@ const Construction = () => {
                   </div>
                 </div>
               </p>
-            </div>
-            <div className="w-full md:w-2/5 flex flex-col items-center mx-20">
-              <img
-                src={ConstructionSub}
-                alt="About Us"
-                className="rounded-2xl h-[300px] text-center mb-10 w-[85%]"
-              />
-              <img
-                src={ConstructionSub2}
-                alt="About Us"
-                className="rounded-2xl h-[300px] w-[85%] text-center"
-              />
             </div>
           </div>
         </div>
