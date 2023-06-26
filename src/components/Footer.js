@@ -112,6 +112,26 @@ const Footer = () => {
           <p className="text-sm text-gray-300">
             © Copyright 2023 J B & Comppany. All rights reserved.
           </p>
+          <p>
+            Designed & Developed By:{" "}
+            <a
+              href="https://thedigitalhouse.co.in/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-bold text-[#ffab2d]"
+            >
+              The Digital House{" "}
+            </a>
+            And{" "}
+            <a
+              href="https://www.linkedin.com/in/sgprajapati/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-bold text-[#ffab2d]"
+            >
+              Shyamal Prajapati
+            </a>
+          </p>
           <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
             <li>
               <a

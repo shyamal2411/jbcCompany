@@ -1,29 +1,6 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import React from "react";
 
 const Contact = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_ij80mus",
-        "template_jg7lq0s",
-        form.current,
-        "Te2UxaDaAdwHwZLBc"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("Message sent!");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
   return (
     <div
       id="contact"
@@ -38,7 +15,12 @@ const Contact = () => {
             Got a technical issue? Want to send feedback about a beta feature?
             Need details about our Business plan? Let us know.
           </p>
-          <form ref={form} onSubmit={sendEmail} className="space-y-8">
+          <form
+            action="https://send.pageclip.co/23ElAA7vw4FHPA0MNpsAFL8HQj6TFs9K/JBCompany"
+            class="pageclip-form"
+            method="post"
+            className="space-y-8"
+          >
             <div>
               <label
                 htmlFor="email"
@@ -48,7 +30,7 @@ const Contact = () => {
               </label>
               <input
                 type="email"
-                name="user_email"
+                name="email"
                 id="email"
                 className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                 placeholder="abc@gmail.com"
@@ -88,7 +70,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              value="Send"
+              // value="Send"
               className="py-3 px-5 text-sm font-medium text-center text-[#ffab2d] rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-[#0E303D]"
             >
               Send message
