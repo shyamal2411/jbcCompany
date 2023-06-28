@@ -2,6 +2,7 @@
   "name": "jbcompany",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jbcompany.in",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
