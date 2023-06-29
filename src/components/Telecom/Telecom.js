@@ -1,6 +1,6 @@
 import React from "react";
-import TelecomSub2 from "../assets/TelecomSub2.png";
-import TelecomSub from "../assets/TelecomSub.png";
+import TelecomSub2 from "../../assets/TelecomSub2.png";
+import TelecomSub from "../../assets/TelecomSub.png";
 
 const Power = () => {
   return (

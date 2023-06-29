@@ -5,9 +5,9 @@ import Hero from "./components/Hero";
 import Header from "./components/Header";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Telecom from "./components/Telecom";
-import Construction from "./components/Construction";
-import Power from "./components/Power";
+import Telecom from "./components/Telecom/Telecom";
+import Construction from "./components/Construction/Construction";
+import Power from "./components/Power/Power";
 
 function App() {
   return (
